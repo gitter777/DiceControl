@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu2Activity">
+
+    <ImageView
+        android:src="@drawable/bac2"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/huru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="何面ダイス？"
+        android:textColor="#FF3D00"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <NumberPicker
+        android:id="@+id/num"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="140dp"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:id="@+id/txMen"
+        android:text="面"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toRightOf="@id/num"
+        app:layout_constraintTop_toTopOf="@id/num"
+        app:layout_constraintBottom_toBottomOf="@id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:src="@drawable/castam5"
+        android:onClick="next"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="1dp"
+        android:layout_width="130dp"
+        android:layout_height="55dp"/>
+
+    <ImageView
+        android:id="@+id/theDice"
+        android:src="@drawable/earth"
+        app:layout_constraintRight_toRightOf="@id/next"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/next"
+        app:layout_constraintBottom_toBottomOf="@id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/txNext"
+        android:text="次へ"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/next"
+        app:layout_constraintBottom_toBottomOf="@id/next"
+        app:layout_constraintLeft_toLeftOf="@id/next"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
